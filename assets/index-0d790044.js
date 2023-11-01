@@ -178,11 +178,11 @@ Error generating stack: `+o.message+`
     0 0 20px #00baff,
     0 0 40px #00baff,
     0 0 80px #00baff;
-`,yg=()=>I.jsx(vg,{children:I.jsx(gg,{children:"404"})}),wg="/RentedCars/assets/background-cb6f1b2b.png",Sg=Ye.div`
+`,yg=()=>I.jsx(vg,{children:I.jsx(gg,{children:"404"})}),wg=Ye.div`
   width: 100%;
   height: 100vh;
-  background-image: url(${wg});
+  background-image: url();
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-`;function kg(){return I.jsx(Sg,{children:I.jsx(Gh,{children:I.jsxs(hr,{path:"/",element:I.jsx(mv,{}),children:[I.jsx(hr,{path:"/first",element:I.jsx(fg,{})}),I.jsx(hr,{path:"/second",element:I.jsx(mg,{})}),I.jsx(hr,{path:"*",element:I.jsx(yg,{})})]})})})}Ml.createRoot(document.getElementById("root")).render(I.jsx(sn.StrictMode,{children:I.jsx(e0,{basename:"/RentedCars",children:I.jsx(kg,{})})}));
+`;function Sg(){return I.jsx(wg,{children:I.jsx(Gh,{children:I.jsxs(hr,{path:"/",element:I.jsx(mv,{}),children:[I.jsx(hr,{path:"/first",element:I.jsx(fg,{})}),I.jsx(hr,{path:"/second",element:I.jsx(mg,{})}),I.jsx(hr,{path:"*",element:I.jsx(yg,{})})]})})})}Ml.createRoot(document.getElementById("root")).render(I.jsx(sn.StrictMode,{children:I.jsx(e0,{basename:"/RentedCars",children:I.jsx(Sg,{})})}));
