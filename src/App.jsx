@@ -5,10 +5,7 @@ import SecondPage from './pages/SecondPage/SecondPage';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import { AppWrapper } from './App.styled';
 
-const test = import.meta.env.VITE_API_TEST;
-
 function App() {
-  console.log(test);
   return (
     <AppWrapper>
       <Routes>
