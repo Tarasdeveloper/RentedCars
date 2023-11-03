@@ -1,3 +1,9 @@
+@import-normalize; /* bring in normalize.css styles */
+
+:root {
+  --secondary-font: 'Coolvetica', sans-serif;
+}
+
 body {
   background-size: auto 100%;
   background-position: center center;
@@ -10,6 +16,7 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -21,6 +28,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 ul {
   list-style: none;
@@ -32,4 +40,5 @@ img {
 }
 button {
   cursor: pointer;
+  color: inherit;
 }
