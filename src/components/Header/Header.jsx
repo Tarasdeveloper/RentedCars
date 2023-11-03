@@ -11,11 +11,15 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <Navigation>
-        <IconWrapper>
-          <use href={`${sprite}#icon-logo`} />
-        </IconWrapper>
-        <StyledLink to="/catalog">Catalog</StyledLink>
-        <StyledLink to="/favorites">Favorites</StyledLink>
+        <StyledLink to="/">
+          <IconWrapper>
+            <use href={`${sprite}#icon-logo`} />
+          </IconWrapper>
+        </StyledLink>
+        <div>
+          <StyledLink to="/catalog">Catalog</StyledLink>
+          <StyledLink to="/favorites">Favorites</StyledLink>
+        </div>
       </Navigation>
     </HeaderContainer>
   );

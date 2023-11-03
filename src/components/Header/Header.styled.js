@@ -2,12 +2,13 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-  padding: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
 `;
 
 export const Navigation = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 `;
 
@@ -20,20 +21,25 @@ export const StyledLink = styled(Link)`
 
   &:hover,
   &:focus {
-    color: #00baff;
+    color: var(--accent);
   }
 `;
 
-export const Svg = styled.svg`
-  height: 40px;
-  width: 40px;
-  fill: #00baff;
-`;
+// export const Svg = styled.svg`
+//   height: 40px;
+//   width: 40px;
+//   fill: var(--accent);
+// `;
 
 export const IconWrapper = styled.svg`
   width: ${(props) => props.size || '40px'};
   height: ${(props) => props.size || '40px'};
   fill: ${(props) => props.color || '#000000'};
   display: inline-block;
-  margin-right: 5px;
+  transition: fill var(--transit);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent);
+  }
 `;
