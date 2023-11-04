@@ -3,7 +3,8 @@ import {
   Navigation,
   StyledLink,
   IconWrapper,
-  // Svg,
+  Icon,
+  LinksWrapper,
 } from './Header.styled';
 import sprite from '../../assets/sprite.svg';
 
@@ -13,13 +14,16 @@ export const Header = () => {
       <Navigation>
         <StyledLink to="/">
           <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
+            <Icon>
+              <use href={`${sprite}#icon-logo`} />
+            </Icon>
+            RentedCars
           </IconWrapper>
         </StyledLink>
-        <div>
+        <LinksWrapper>
           <StyledLink to="/catalog">Catalog</StyledLink>
           <StyledLink to="/favorites">Favorites</StyledLink>
-        </div>
+        </LinksWrapper>
       </Navigation>
     </HeaderContainer>
   );

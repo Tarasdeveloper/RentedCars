@@ -3,11 +3,11 @@ import SharedLayout from './components/SharedLayout/SharedLayout';
 import { AppWrapper } from './App.styled';
 import { Suspense, lazy } from 'react';
 import Spinner from './components/Spinner/Spinner';
+import './fonts.css';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const Catalog = lazy(() => import('./pages/Catalog/Catalog'));
 const Favorites = lazy(() => import('./pages/Favorites/Favorites'));
-import './fonts.css';
 
 function App() {
   return (

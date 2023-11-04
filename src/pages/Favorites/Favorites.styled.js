@@ -5,13 +5,12 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 500px;
 `;
 export const Block = styled.div`
   text-align: center;
 `;
 export const Title = styled.h1`
-  color: #000000;
+  color: var(--title-color);
 `;
 
 export const StyledLink = styled(Link)`
@@ -24,6 +23,6 @@ export const StyledLink = styled(Link)`
   display: block;
   &:hover,
   &:focus {
-    color: #00baff; /* Blue text color on hover/focus */
+    color: var(--accent-hover);
   }
 `;

@@ -47,3 +47,13 @@
     url('/src/assets/fonts/Montserrat-Regular.woff') format('woff');
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: italic;
+  src:
+    url('/src/assets/fonts/Montserrat-BoldItalic.woff2') format('woff2'),
+    url('/src/assets/fonts/Montserrat-BoldItalic.woff') format('woff');
+  font-display: swap;
+}
