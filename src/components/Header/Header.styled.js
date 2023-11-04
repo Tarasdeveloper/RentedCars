@@ -41,6 +41,7 @@ export const IconWrapper = styled.div`
   font-weight: 700;
   font-style: italic;
   font-size: 25px;
+  margin-left: 20px;
   transition:
     fill var(--transit),
     color var(--transit);

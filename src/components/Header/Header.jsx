@@ -21,6 +21,7 @@ export const Header = () => {
           </IconWrapper>
         </StyledLink>
         <LinksWrapper>
+          <StyledLink to="/">Home</StyledLink>
           <StyledLink to="/catalog">Catalog</StyledLink>
           <StyledLink to="/favorites">Favorites</StyledLink>
         </LinksWrapper>

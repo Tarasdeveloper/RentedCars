@@ -1,13 +1,14 @@
-import { Container, Block, Title } from './Favorites.styled';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import { Container, Block } from './Favorites.styled';
 
-const Favorites = () => {
+const FavoritesPage = () => {
   return (
     <Container>
       <Block>
-        <Title>Second Page</Title>
+        <Sidebar />
       </Block>
     </Container>
   );
 };
 
-export default Favorites;
+export default FavoritesPage;
