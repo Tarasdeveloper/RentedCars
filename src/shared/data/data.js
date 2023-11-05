@@ -27,28 +27,23 @@ export const carClasses = [
   { src: minivan, alt: 'minivan', name: 'minivan', priceRange: '43$ - 90$' },
 ];
 
-// export const accordionData = [
-//   {
-//     title: 'Diverse Fleet',
-//     content:
-//       'Our extensive range of vehicles caters to every traveler`s needs. Whether you`re traveling solo, with family, or on a business trip, we have the perfect car waiting for you. From compact cars to spacious SUVs, our fleet is well-maintained, ensuring a safe and comfortable journey.',
-//   },
-//   {
-//     title: 'Seamless Booking',
-//     content:
-//       'Our user-friendly app lets you reserve your car with ease. Select your preferred vehicle, choose your pickup location, and set your rental duration – it`s as simple as that. We`ll handle the rest, ensuring your car is ready when and where you need it.',
-//   },
-//   {
-//     title: 'Affordable Rates',
-//     content:
-//       'We believe that exploring shouldn`t break the bank. Our competitive pricing and flexible rental plans mean you get the best value for your money. No hidden fees, no surprises – just transparent pricing that fits your budget.',
-//   },
-//   {
-//     title: 'Safety First',
-//     content:
-//       'Your safety is our top priority. All our vehicles undergo regular maintenance and safety checks, so you can drive with confidence. Plus, we offer optional insurance coverage for added peace of mind.',
-//   },
-// ];
+export const carStatistics = [
+  { number: 89, text: 'of customers rated our cars as excellent' },
+  {
+    number: 92,
+    text: 'of clients quickly received all the necessary information at the first contact with a manager',
+  },
+  {
+    number: 94,
+    text: 'of clients were given a car no more than 30 minutes after arrival at the office',
+  },
+  { number: 96, text: 'of customers noted that they received a clean car' },
+  { number: 100, text: 'of customers received a car with a full tank' },
+  {
+    number: 93,
+    text: 'of clients handed over their cars and returned their deposit in less than 20 minutes',
+  },
+];
 
 // export const carSlides = [
 //   {

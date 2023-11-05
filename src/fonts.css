@@ -1,5 +1,15 @@
 @font-face {
   font-family: 'Manrope';
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url('/src/assets/fonts/Manrope-Bold.woff2') format('woff2'),
+    url('/src/assets/fonts/Manrope-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
   font-weight: 600;
   font-style: normal;
   src:
@@ -55,5 +65,15 @@
   src:
     url('/src/assets/fonts/Montserrat-BoldItalic.woff2') format('woff2'),
     url('/src/assets/fonts/Montserrat-BoldItalic.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url('/src/assets/fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('/src/assets/fonts/Montserrat-Bold.woff') format('woff');
   font-display: swap;
 }

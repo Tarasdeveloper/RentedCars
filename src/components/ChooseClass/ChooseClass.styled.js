@@ -32,8 +32,8 @@ export const ChooseLink = styled(Link)`
 export const ClassTitle = styled.p`
   font-size: 17px;
   text-transform: uppercase;
-  font-weight: 600;
   font-family: 'Montserrat';
+  font-weight: 700;
 `;
 
 export const ClassSpan = styled.span`
