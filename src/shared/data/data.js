@@ -47,26 +47,32 @@ export const carStatistics = [
 
 export const reasons = [
   {
-    src: econom,
-    alt: 'economy',
+    id: 'gear',
     title: 'Assistance',
     text: 'Support on the road 24/7',
   },
   {
+    id: econom,
     title: 'Affordable prices',
     text: 'We try to provide lower prices than average',
   },
-  { title: 'Minimum of bureaucracy', text: 'Few documents for lease' },
-  { title: 'Full insurance', text: 'All cars are insured' },
   {
+    id: econom,
+    title: 'Minimum of bureaucracy',
+    text: 'Few documents for lease',
+  },
+  { id: econom, title: 'Full insurance', text: 'All cars are insured' },
+  {
+    id: econom,
     title: 'Free delivery to the customer',
     text: 'when renting for more than 3 days',
   },
   {
+    id: econom,
     title: 'All cars in good condition',
     text: 'Our cars are regularly sericed',
   },
-  { title: 'Car replacement', text: 'in the case of failure' },
+  { id: econom, title: 'Car replacement', text: 'in the case of failure' },
 ];
 
 // export const carSlides = [

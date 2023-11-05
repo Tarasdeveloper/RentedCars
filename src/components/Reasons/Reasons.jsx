@@ -1,5 +1,6 @@
 import { reasons } from '../../shared/data/data';
 import { ReasonList, ReasonTitle } from './Reasons.styled';
+import sprite from '../../assets/sprite.svg';
 
 const Reasons = () => {
   return (
@@ -8,7 +9,9 @@ const Reasons = () => {
       <ReasonList>
         {reasons.map((reason, index) => (
           <li key={index}>
-            <img src={reasons.src} alt={reasons.alt} />
+            <svg>
+              <use href={`${sprite}#{reason.id}`} />
+            </svg>
             <h3>{reason.title}</h3>
             <p>{reason.text}</p>
           </li>
