@@ -103,19 +103,26 @@ export const parseMileage = (num) => num.toLocaleString('en-EN');
 export const parsePrice = (str) => str.split('').slice(1).join('');
 
 export const priceOptions = (arr) => {
-  if (!arr.length) {
-    return undefined;
+  // Проверяем, что arr определен и является массивом с помощью Array.isArray и что он не пуст
+  if (!Array.isArray(arr) || !arr.length) {
+    return [];
   }
 
   let max = 0;
   const priceOptions = [];
 
   arr.forEach((item) => {
+    // Убедитесь, что функция parsePrice существует и корректно обрабатывает строки
     const price = +parsePrice(item.rentalPrice);
     if (price > max) {
       max = price;
     }
   });
+
+  // Если max так и остался 0, значит в массиве нет корректных цен, и можно вернуть пустой массив
+  if (max === 0) {
+    return [];
+  }
 
   let i = 10;
   while (i <= max) {
@@ -125,6 +132,30 @@ export const priceOptions = (arr) => {
 
   return priceOptions;
 };
+
+// export const priceOptions = (arr) => {
+//   if (!arr.length) {
+//     return undefined;
+//   }
+
+//   let max = 0;
+//   const priceOptions = [];
+
+//   arr.forEach((item) => {
+//     const price = +parsePrice(item.rentalPrice);
+//     if (price > max) {
+//       max = price;
+//     }
+//   });
+
+//   let i = 10;
+//   while (i <= max) {
+//     priceOptions.push(i);
+//     i += 10;
+//   }
+
+//   return priceOptions;
+// };
 
 export const filterCars = (cars, filter) => {
   if (!filter) {
