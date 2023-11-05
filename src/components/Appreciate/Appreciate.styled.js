@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const AppreciateWrap = styled.div`
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 70px;
 `;
 
 export const AppreciateTitle = styled.h2`

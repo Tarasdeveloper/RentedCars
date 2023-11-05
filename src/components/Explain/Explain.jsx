@@ -1,8 +1,10 @@
+import { ExplainText, ExplainTitle } from './Explain.styled';
+
 const Explain = () => {
   return (
     <div>
-      <h2>Car rental in Ukraine</h2>
-      <p>
+      <ExplainTitle>Car rental in Ukraine</ExplainTitle>
+      <ExplainText>
         Arriving in Ukraine on business or as tourists, many people are faced
         with the problem of free movement around the city. Short or long-term
         car rental at RentedCars is the best alternative to public transport or
@@ -16,7 +18,7 @@ const Explain = () => {
         office by phone or contact us via the Internet. Do not miss the unique
         chance to inexpensively rent a car of the class you need with or without
         a driver!
-      </p>
+      </ExplainText>
     </div>
   );
 };

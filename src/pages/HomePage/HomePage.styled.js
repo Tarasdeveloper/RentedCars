@@ -17,7 +17,8 @@ export const Container = styled.div`
 `;
 
 export const HomeTitle = styled.h1`
-  font-size: 30px;
+  font-size: clamp(25px, 4vw, 40px);
+  color: var(--hover-accent);
   margin-left: 20px;
   margin-bottom: 50px;
   font-weight: 700;

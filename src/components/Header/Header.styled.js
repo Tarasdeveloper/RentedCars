@@ -29,8 +29,9 @@ export const StyledLink = styled(Link)`
 `;
 export const LinksWrapper = styled.div`
   display: flex;
-  gap: 50px;
   margin-right: 20px;
+  width: 360px;
+  justify-content: space-between;
 `;
 
 export const IconWrapper = styled.div`
@@ -42,17 +43,19 @@ export const IconWrapper = styled.div`
   font-style: italic;
   font-size: 25px;
   margin-left: 20px;
+  margin-right: 20px;
   transition:
     fill var(--transit),
     color var(--transit);
+  color: var(--accent);
+  & svg {
+    fill: var(--hover-accent);
+  }
 
   &:hover,
   &:focus {
     & StyledLink {
-      color: var(--hover-accent);
-    }
-    & svg {
-      fill: var(--hover-accent);
+      opacity: 0.1;
     }
   }
 `;

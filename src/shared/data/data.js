@@ -45,6 +45,30 @@ export const carStatistics = [
   },
 ];
 
+export const reasons = [
+  {
+    src: econom,
+    alt: 'economy',
+    title: 'Assistance',
+    text: 'Support on the road 24/7',
+  },
+  {
+    title: 'Affordable prices',
+    text: 'We try to provide lower prices than average',
+  },
+  { title: 'Minimum of bureaucracy', text: 'Few documents for lease' },
+  { title: 'Full insurance', text: 'All cars are insured' },
+  {
+    title: 'Free delivery to the customer',
+    text: 'when renting for more than 3 days',
+  },
+  {
+    title: 'All cars in good condition',
+    text: 'Our cars are regularly sericed',
+  },
+  { title: 'Car replacement', text: 'in the case of failure' },
+];
+
 // export const carSlides = [
 //   {
 //     url: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80',

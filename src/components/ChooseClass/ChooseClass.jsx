@@ -12,7 +12,7 @@ import {
 const ChooseClass = () => {
   return (
     <ChooseContainer>
-      <ChooseTitle>Choose class of your car for rental</ChooseTitle>
+      <ChooseTitle>Choose class of your car for rent</ChooseTitle>
       <ChooseList>
         {carClasses.map((carClass, index) => (
           <ChooseItem key={index}>

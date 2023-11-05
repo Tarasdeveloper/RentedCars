@@ -11,12 +11,21 @@ export const ChooseContainer = styled.div`
   background-color: #fff;
   border-radius: 12px;
   padding: 20px;
-  margin-bottom: 120px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+  }
 `;
 
 export const ChooseList = styled.ul`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 `;
 
 export const ChooseItem = styled.li`
