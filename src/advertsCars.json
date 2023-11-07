@@ -31,7 +31,7 @@
     "make": "Volvo",
     "model": "XC90",
     "type": "SUV",
-    "img": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695484002/cars/volvo_xc60_zticu6.webp",
+    "img": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695484002/cars/volvo_xc90_fal6ci.jpg",
     "description": "The Volvo XC90 is a premium SUV that offers exceptional safety, advanced technology, and elegant design.",
     "fuelConsumption": "8.3",
     "engineSize": "2.0L 4-cylinder",
@@ -52,7 +52,7 @@
     "mileage": 5352
   },
   {
-    "id": 9586,
+    "id": 6256,
     "year": 2020,
     "make": "Volvo",
     "model": "XC60",
@@ -78,7 +78,7 @@
     "mileage": 5966
   },
   {
-    "id": 9587,
+    "id": 9111,
     "year": 2006,
     "make": "HUMMER",
     "model": "H2",
@@ -525,7 +525,7 @@
     "make": "Chrysler",
     "model": "Voyager",
     "type": "Van/Minivan",
-    "photoLink": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695483659/cars/chrysler_voyager_xt64zr.jpg",
+    "img": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695483659/cars/chrysler_voyager_xt64zr.jpg",
     "description": "The Chrysler Voyager is a practical and versatile van/minivan that provides comfortable seating, ample cargo space, and a range of convenient features for family-oriented transportation.",
     "fuelConsumption": "8.2",
     "engineSize": "3.6L V6",
@@ -546,12 +546,12 @@
     "mileage": 5807
   },
   {
-    "id": 9630,
+    "id": 7654,
     "year": 2020,
     "make": "Kia",
     "model": "Rio",
     "type": "Hatchback",
-    "photoLink": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695483659/cars/kia_rio_hatchback_nq64ia.jpg",
+    "img": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695483659/cars/kia_rio_hatchback_nq64ia.jpg",
     "description": "The Kia Rio is a compact and fuel-efficient hatchback that offers a blend of affordability, reliability, and practicality, making it an excellent choice for urban commuting and everyday driving.",
     "fuelConsumption": "6.2",
     "engineSize": "1.6L 4-cylinder",
@@ -572,12 +572,12 @@
     "mileage": 4618
   },
   {
-    "id": 9586,
+    "id": 1212,
     "year": 2020,
     "make": "Volvo",
     "model": "XC60",
     "type": "SUV",
-    "photoLink": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695483660/cars/volvo_xc60_2_lvq5e5.jpg",
+    "img": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695483660/cars/volvo_xc60_2_lvq5e5.jpg",
     "description": "The Volvo XC60 is a luxurious and versatile SUV that combines Scandinavian design, advanced safety features, and a comfortable driving experience, making it an ideal choice for families and adventure enthusiasts.",
     "fuelConsumption": "8.5",
     "engineSize": "2.0L 4-cylinder",
@@ -603,7 +603,7 @@
     "make": "Land Rover",
     "model": "Range Rover Sport",
     "type": "SUV",
-    "photoLink": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695483659/cars/land_rover_range_rover_sport_zzlwby.jpg",
+    "img": "https://res.cloudinary.com/dkqxaid79/image/upload/v1695483659/cars/land_rover_range_rover_sport_zzlwby.jpg",
     "description": "The Land Rover Range Rover Sport is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
     "fuelConsumption": "11.8",
     "engineSize": "3.0L V6",
@@ -629,7 +629,7 @@
     "make": "Kia",
     "model": "Rio",
     "type": "Sedan, Hatchback",
-    "photoLink": "https://images.unsplash.com/photo-1592805723127-004b174a1798?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "img": "https://images.unsplash.com/photo-1592805723127-004b174a1798?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     "description": "The Kia Rio is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
     "fuelConsumption": "6.2",
     "engineSize": "1.6L 4-cylinder",
@@ -645,17 +645,17 @@
     ],
     "rentalPrice": "$50",
     "rentalCompany": "Economy Car Rentals",
-    "address": "321 Example Lane, Kharkiv, Ukraine",
+    "address": "321 Lane, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
     "mileage": 6234
   },
   {
-    "id": 9728,
+    "id": 27954,
     "year": 2022,
     "make": "Mercedes-Benz",
     "model": "S-Class",
     "type": "Sedan",
-    "photoLink": "https://images.unsplash.com/photo-1657976763238-baab2fee9c53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "img": "https://images.unsplash.com/photo-1657976763238-baab2fee9c53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     "description": "The Mercedes-Benz S-Class is the epitome of luxury and technology, offering a plush ride and cutting-edge features.",
     "fuelConsumption": "9.2",
     "engineSize": "4.0L V8",
@@ -666,13 +666,191 @@
     ],
     "functionalities": [
       "Magic Body Control",
-      "Electronic Stability Control",
-      "Rearview camera"
+      "Voice-activated controls",
+      "Lane-keeping assist"
     ],
     "rentalPrice": "$75",
-    "rentalCompany": "Economy Car Rentals",
-    "address": "321 Example Lane, Kharkiv, Ukraine",
-    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
+    "rentalCompany": "Luxury Car Rentals",
+    "address": "456 Example Boulevard, Kiev, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
     "mileage": 2547
+  },
+  {
+    "id": 43178,
+    "year": 2021,
+    "make": "Tesla",
+    "model": "Model 3",
+    "type": "Electric",
+    "img": "https://images.unsplash.com/photo-1561580125-028ee3bd62eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "description": "The Tesla Model 3 is a popular electric sedan known for its impressive range and advanced autopilot features.",
+    "fuelConsumption": "Electric",
+    "engineSize": "Electric",
+    "accessories": [
+      "Premium interior",
+      "Autopilot",
+      "17-inch touchscreen display"
+    ],
+    "functionalities": [
+      "Full self-driving capability",
+      "Supercharger network access",
+      "Summon feature"
+    ],
+    "rentalPrice": "$60",
+    "rentalCompany": "Electric Car Rentals",
+    "address": "789 Avenue, Kiev, Ukraine",
+    "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit required",
+    "mileage": 3200
+  },
+  {
+    "id": 9585,
+    "year": 2022,
+    "make": "Ford",
+    "model": "F-150",
+    "type": "Truck",
+    "img": "https://images.unsplash.com/photo-1590053936004-faca6038bfec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "description": "The Ford F-150 is a rugged and capable pickup truck known for its towing capacity and modern technology.",
+    "fuelConsumption": "15.7",
+    "engineSize": "3.5L V6",
+    "accessories": [
+      "Leather-trimmed seats",
+      "Sync 4 infotainment",
+      "Pro Power Onboard generator"
+    ],
+    "functionalities": [
+      "Towing package",
+      "Adaptive cruise control",
+      "360-degree camera"
+    ],
+    "rentalPrice": "$50",
+    "rentalCompany": "Truck Rentals",
+    "address": "101 Drive, Kiev, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+    "mileage": 4685
+  },
+  {
+    "id": 2343,
+    "year": 2020,
+    "make": "BMW",
+    "model": "5 Series",
+    "type": "Sedan",
+    "img": "https://images.unsplash.com/photo-1652890041546-2de2829c43b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "description": "The BMW 5 Series offers a perfect blend of performance and luxury, making it a top choice in the executive sedan segment.",
+    "fuelConsumption": "8.9",
+    "engineSize": "2.0L Inline-4",
+    "accessories": [
+      "Dakota leather seats",
+      "iDrive infotainment",
+      "Harman Kardon sound system"
+    ],
+    "functionalities": [
+      "Heads-up display",
+      "Gesture control",
+      "Parking assistant"
+    ],
+    "rentalPrice": "$65",
+    "rentalCompany": "Luxury Car Rentals",
+    "address": "321 Hero Lane, Kiev, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+    "mileage": 3800
+  },
+  {
+    "id": 9587,
+    "year": 2021,
+    "make": "Toyota",
+    "model": "Prius",
+    "type": "Hybrid",
+    "img": "https://images.unsplash.com/photo-1602343504619-b057fdc14213?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "description": "The Toyota Prius is an eco-friendly hybrid known for its exceptional fuel efficiency and low emissions.",
+    "fuelConsumption": "Hybrid",
+    "engineSize": "1.8L Inline-4 Hybrid",
+    "accessories": [
+      "Fabric seats",
+      "Toyota Safety Sense",
+      "8-inch touchscreen"
+    ],
+    "functionalities": [
+      "Hybrid Synergy Drive",
+      "Lane departure alert",
+      "Smart Key System"
+    ],
+    "rentalPrice": "$45",
+    "rentalCompany": "Green Car Rentals",
+    "address": "555 Green Road, Kiev, Ukraine",
+    "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit required",
+    "mileage": 6200
+  },
+  {
+    "id": 9588,
+    "year": 2022,
+    "make": "Audi",
+    "model": "Q5",
+    "type": "SUV",
+    "img": "https://images.unsplash.com/photo-1617195920950-1145bf9a9c72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+    "description": "The Audi Q5 is a versatile luxury SUV with a comfortable interior and advanced technology features.",
+    "fuelConsumption": "9.8",
+    "engineSize": "2.0L Inline-4",
+    "accessories": [
+      "Leather seats",
+      "Audi Virtual Cockpit",
+      "Bang & Olufsen sound system"
+    ],
+    "functionalities": [
+      "Quattro all-wheel drive",
+      "Audi Pre Sense",
+      "Adaptive cruise control"
+    ],
+    "rentalPrice": "$55",
+    "rentalCompany": "Luxury Car Rentals",
+    "address": "789 Audi Avenue, Kiev, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+    "mileage": 4200
+  },
+  {
+    "id": 9589,
+    "year": 2021,
+    "make": "Honda",
+    "model": "NSX",
+    "type": "Hybrid",
+    "img": "https://images.unsplash.com/photo-1560361586-8242b1fc06c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1927&q=80",
+    "description": "The Acura / Honda NSX is a reliable and fuel-efficient compact hybrid that's perfect for city driving.",
+    "fuelConsumption": "6.3",
+    "engineSize": "2.0L Inline-4",
+    "accessories": [
+      "Cloth seats",
+      "Honda Sensing suite",
+      "Apple CarPlay/Android Auto"
+    ],
+    "functionalities": [
+      "Lane keeping assist",
+      "Collision mitigation braking",
+      "Rearview camera"
+    ],
+    "rentalPrice": "$35",
+    "rentalCompany": "City Car Rentals",
+    "address": "987 Peace Place, Kiev, Ukraine",
+    "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit required",
+    "mileage": 5500
+  },
+  {
+    "id": 9592,
+    "year": 2022,
+    "make": "Jeep",
+    "model": "Wrangler",
+    "type": "SUV",
+    "img": "https://images.unsplash.com/photo-1613793479775-10283b5fe6bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80",
+    "description": "The Jeep Wrangler is a rugged and off-road-capable SUV, perfect for outdoor adventures.",
+    "fuelConsumption": "12.8",
+    "engineSize": "3.6L V6",
+    "accessories": [
+      "Cloth seats",
+      "Uconnect infotainment",
+      "Removable top and doors"
+    ],
+    "functionalities": ["4x4 capability", "Trail-rated", "Off-road pages"],
+    "rentalPrice": "$50",
+    "rentalCompany": "Adventure Car Rentals",
+    "address": "678 Jeep Road, Kiev, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+    "mileage": 3800
   }
 ]
