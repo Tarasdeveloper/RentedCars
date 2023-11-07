@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import DefaultCar from '../../assets/images/youngman.jpg';
-import Button from '../Button/Button';
-import { useToggle } from '../../shared/hooks/useToggle';
-import Modal from '../Modal/Modal';
-import ModalCardDetail from '../Modal/ModalCardDetail';
-import { getCarData, getLocationData } from '../../shared/utils/utils';
+import DefaultCar from '../../../assets/images/matureman.jpg';
+import { useToggle } from '../../../shared/hooks/useToggle';
+import Modal from '../../Modal/Modal';
+import ModalCardDetail from '../../Modal/ModalCardDetail';
+import { getCarData, getLocationData } from '../../../shared/utils/utils';
 import {
   removeFromFavorites,
   setToFavorites,
-} from '../../redux/cars/carsSlice';
-import { selectFavorites } from '../../redux/cars/carsSelectors';
-import ThumbImage from '../ThumbImage/ThumbImage';
-import CardInfoBlock from './CardInfoBlock';
+} from '../../../redux/cars/carsSlice';
+import { selectFavorites } from '../../../redux/cars/carsSelectors';
+import ThumbImage from '../../ThumbImage/ThumbImage';
+import CardInfoBlock from '../CardInfoBlock';
+import { CarButton } from './Caritem.styled';
 
 const CarItem = ({ car }) => {
   const { isOpen, open, close } = useToggle(false);
@@ -34,20 +34,15 @@ const CarItem = ({ car }) => {
 
   return (
     <>
-      <li className="card flex-auto">
-        <Button
-          type="button"
-          iconURL="#icon-heart"
-          ariaLabel="heart icon"
-          onClick={handleToggleFavorite}
-          className={`heart ${isFavorite ? 'favorite' : ''}`}
-        />
+      <li>
+        <CarButton type="button" onClick={handleToggleFavorite}>
+          heart icon
+        </CarButton>
         <ThumbImage
-          className="card-image"
           src={img ? img : DefaultCar}
           alt={`${make} ${model}`}
           width="274"
-          height="426"
+          height="275"
           loading="lazy"
         />
         {/* <Title> */}
@@ -60,7 +55,9 @@ const CarItem = ({ car }) => {
 
         <CardInfoBlock locationData={locationData} carData={carData} />
 
-        <Button label="Learn more" className="card-big-button" onClick={open} />
+        <CarButton label="Learn more" onClick={open}>
+          Learn more
+        </CarButton>
         {isOpen && (
           <Modal isOpen={isOpen} onClose={close}>
             <ModalCardDetail car={car} />

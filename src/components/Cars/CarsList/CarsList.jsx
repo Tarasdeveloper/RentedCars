@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import Button from '../Button/Button';
-import { COUNT_CARS } from '../../shared/constants/constants';
-import { useLoadMore } from '../../shared/hooks/useLoadMore';
-import { filteredCars } from '../../shared/utils/utils';
-import CarItem from './CarItem';
+import { COUNT_CARS } from '../../../shared/constants/constants';
+import { useLoadMore } from '../../../shared/hooks/useLoadMore';
+import { filteredCars } from '../../../shared/utils/utils';
+import CarItem from '../CarItem/CarItem';
+import { CarsArr, LoadBtn } from './CarsList.styled';
 
 const CarsList = ({ adverts }) => {
   const [currentPage, carsLimit, loadMore] = useLoadMore(COUNT_CARS);
@@ -12,13 +12,13 @@ const CarsList = ({ adverts }) => {
 
   return (
     <>
-      <ul className="cards-list">
+      <CarsArr>
         {filteredCars(adverts, indexOfLastCar).map((car) => (
           <CarItem car={car} key={car.id} />
         ))}
-      </ul>
+      </CarsArr>
       {adverts?.length >= indexOfLastCar && (
-        <Button className="button-load" label="Load more" onClick={loadMore} />
+        <LoadBtn onClick={loadMore}>Load more</LoadBtn>
       )}
     </>
   );

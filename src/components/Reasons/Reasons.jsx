@@ -1,23 +1,30 @@
 import { reasons } from '../../shared/data/data';
-import { ReasonList, ReasonTitle } from './Reasons.styled';
+import {
+  ReasonItem,
+  ReasonList,
+  ReasonName,
+  ReasonTitle,
+  ReasonWrap,
+  Svg,
+} from './Reasons.styled';
 import sprite from '../../assets/sprite.svg';
 
 const Reasons = () => {
   return (
-    <div>
+    <ReasonWrap>
       <ReasonTitle>Seven reasons to rent a car in RentedCars:</ReasonTitle>
       <ReasonList>
         {reasons.map((reason, index) => (
-          <li key={index}>
-            <svg>
-              <use href={`${sprite}#{reason.id}`} />
-            </svg>
-            <h3>{reason.title}</h3>
+          <ReasonItem key={index}>
+            <Svg>
+              <use href={`${sprite}#${reason.id}`} />
+            </Svg>
+            <ReasonName>{reason.title}</ReasonName>
             <p>{reason.text}</p>
-          </li>
+          </ReasonItem>
         ))}
       </ReasonList>
-    </div>
+    </ReasonWrap>
   );
 };
 

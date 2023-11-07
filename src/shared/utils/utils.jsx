@@ -20,14 +20,9 @@ export const getLocationData = (address, car) => {
   return [city, country, rentalCompany];
 };
 
-export const renderItems = (arr, el, className) => {
+export const renderItems = (arr, el) => {
   return arr.map((item, idx) => (
-    <li
-      key={idx}
-      className={
-        className ? `text-description ${className}` : 'text-description '
-      }
-    >
+    <li key={idx}>
       {item}
       {idx < arr.length - 1 && el}
     </li>

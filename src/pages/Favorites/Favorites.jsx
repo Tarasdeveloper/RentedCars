@@ -1,13 +1,13 @@
 import Sidebar from '../../components/Sidebar/Sidebar';
-import { Container, Block } from './Favorites.styled';
+import { Container } from '../Catalog/Catalog.styled';
 
 const FavoritesPage = () => {
   return (
-    <Container>
-      <Block>
+    <>
+      <Container>
         <Sidebar />
-      </Block>
-    </Container>
+      </Container>
+    </>
   );
 };
 

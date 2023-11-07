@@ -1,7 +1,11 @@
 import { useSelector } from 'react-redux';
-import { selectFavorites, selectFilter } from '../../redux/cars/carsSelectors';
-import { filterCars } from '../../shared/utils/utils';
-import CarItem from './CarItem';
+import {
+  selectFavorites,
+  selectFilter,
+} from '../../../redux/cars/carsSelectors';
+import { filterCars } from '../../../shared/utils/utils';
+import CarItem from '../CarItem/CarItem';
+import { FavoreList } from './FavoritesList.styled';
 // import NotFound from '../NotFound/NotFound';
 
 const FavoritesList = () => {
@@ -11,12 +15,12 @@ const FavoritesList = () => {
 
   return (
     <div>
-      {!filteredCars.length && {}}
-      <ul>
+      {!filteredCars.length && 'Not Found'}
+      <FavoreList>
         {filteredCars.map((car) => (
           <CarItem car={car} key={car.id} />
         ))}
-      </ul>
+      </FavoreList>
     </div>
   );
 };

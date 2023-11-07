@@ -1,8 +1,7 @@
 import { useSelector } from 'react-redux';
 
-import FavoritesList from '../Cars/FavoritesList';
+import FavoritesList from '../Cars/FavoritesList/FavoritesList';
 
-import Button from '../Button/Button';
 import Title from '../Title/Title';
 import { useToggle } from '../../shared/hooks/useToggle';
 
@@ -22,14 +21,13 @@ const Sidebar = () => {
           isOpen ? 'sidebar-open' : 'sidebar-close'
         } sidebar relative`}
       >
-        <Button
-          iconURL="#icon-arrow"
+        <button
+          // iconURL="#icon-arrow"
           type="button"
-          className="sidebar-btn"
-          svgClass={`${!isOpen && 'ease-in-out'} transition`}
+          // svgClass={`${!isOpen && 'ease-in-out'} transition`}
           onClick={toggle}
-        />
-        <div className="flex flex-col items-center gap-x-4">
+        ></button>
+        <div>
           {favoriteCars.length > 0 && (
             <Title
               className={`gradient ${!isOpen && 'hidden'} ${

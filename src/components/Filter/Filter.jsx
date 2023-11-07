@@ -1,14 +1,27 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-
 import { useLocation } from 'react-router-dom';
-
 import { useUniquePropValues } from '../../shared/hooks/usePropValues';
 import { resetFilter, setFilter } from '../../redux/cars/carsSlice';
 import { selectFilter } from '../../redux/cars/carsSelectors';
 import { priceOptions } from '../../shared/utils/utils';
-import Button from '../Button/Button';
+// import Button from '../Button/Button';
 import { Controller, useForm } from 'react-hook-form';
+import {
+  BrandInput,
+  BrandSelect,
+  FilterWrap,
+  FromInput,
+  FromLabel,
+  FromSpan,
+  HeaderButton,
+  InputButtons,
+  InputsList,
+  PriceSelect,
+  ToInput,
+  ToLabel,
+  ToSpan,
+} from './Filter.styled';
 
 const Filter = ({ cars }) => {
   const filter = useSelector(selectFilter);
@@ -51,14 +64,14 @@ const Filter = ({ cars }) => {
   };
 
   return (
-    <form
+    <FilterWrap
       onSubmit={handleSubmit(onSubmit)}
-      className={`${isFormDisabled ? 'pointer-events-none' : ''}`}
+      // className={`${isFormDisabled ? 'pointer-events-none' : ''}`}
       disabled={isFormDisabled}
     >
-      <div>
-        <div>
-          <div>
+      <InputButtons>
+        <InputsList>
+          <BrandInput>
             <label htmlFor="brand">Car brand</label>
             <Controller
               name="brand"
@@ -66,7 +79,7 @@ const Filter = ({ cars }) => {
               rules={{ required: true, message: 'Brand is required' }}
               render={({ field }) => (
                 <>
-                  <select {...field}>
+                  <BrandSelect {...field}>
                     <option value="">Enter the text</option>
                     {uniqueBrands &&
                       uniqueBrands.map((make, idx) => (
@@ -74,7 +87,7 @@ const Filter = ({ cars }) => {
                           {make}
                         </option>
                       ))}
-                  </select>
+                  </BrandSelect>
                   {errors.brand && (
                     <p
                       className={`error ${
@@ -89,7 +102,7 @@ const Filter = ({ cars }) => {
                 </>
               )}
             />
-          </div>
+          </BrandInput>
           <div>
             <label htmlFor="price">Price/ 1 hour</label>
             <div>
@@ -105,7 +118,7 @@ const Filter = ({ cars }) => {
                 }}
                 render={({ field }) => (
                   <>
-                    <select {...field}>
+                    <PriceSelect {...field}>
                       <option value="">To $</option>
                       {price &&
                         price.map((price, index) => (
@@ -113,7 +126,7 @@ const Filter = ({ cars }) => {
                             {price}
                           </option>
                         ))}
-                    </select>
+                    </PriceSelect>
                     {errors.price && (
                       <p
                         className={`${
@@ -133,8 +146,8 @@ const Filter = ({ cars }) => {
           <div>
             <label htmlFor="minMileage">Car mileage / km (from)</label>
             <div>
-              <label className="relative">
-                <input
+              <FromLabel>
+                <FromInput
                   type="number"
                   {...register('from', {
                     required: 'This field is required',
@@ -144,10 +157,10 @@ const Filter = ({ cars }) => {
                     },
                   })}
                 />
-                <span>From</span>
-              </label>
-              <label>
-                <input
+                <FromSpan>From</FromSpan>
+              </FromLabel>
+              <ToLabel>
+                <ToInput
                   type="number"
                   {...register('to', {
                     required: 'This field is required',
@@ -163,21 +176,29 @@ const Filter = ({ cars }) => {
                     },
                   })}
                 />
-                <span>To</span>
-              </label>
+                <ToSpan>To</ToSpan>
+              </ToLabel>
               <p className={` ${isFormDisabled ? 'opacity-0' : 'opacity-100'}`}>
                 {errors?.from && <span>{errors.from.message}</span>}
                 {errors?.to && <span>{errors.to.message}</span>}
               </p>
             </div>
           </div>
-        </div>
+        </InputsList>
         <div>
-          <Button type="submit" label="Search" />
-          <Button type="button" onClick={resetFilterInRedux} label="Reset" />
+          <HeaderButton type="submit" label="Search">
+            Search
+          </HeaderButton>
+          <HeaderButton
+            type="button"
+            onClick={resetFilterInRedux}
+            label="Reset"
+          >
+            Reset
+          </HeaderButton>
         </div>
-      </div>
-    </form>
+      </InputButtons>
+    </FilterWrap>
   );
 };
 
