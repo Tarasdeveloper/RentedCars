@@ -8,6 +8,7 @@ import { useToggle } from '../../shared/hooks/useToggle';
 import { selectFavorites } from '../../redux/cars/carsSelectors';
 import RadioFilter from '../Filter/RadioFilter';
 import Filter from '../Filter/Filter';
+import { Aside, AsideBtn, AsideWrap } from './Sidebar.styled';
 
 const Sidebar = () => {
   const { isOpen, toggle } = useToggle(false);
@@ -15,19 +16,19 @@ const Sidebar = () => {
   const favoriteCars = useSelector(selectFavorites);
 
   return (
-    <aside>
-      <div>
-        <button type="button" onClick={toggle}>
-          svg
-        </button>
-        <div>{favoriteCars.length > 0 && <Title>Company</Title>}</div>
+    <Aside>
+      <AsideWrap>
+        <AsideBtn type="button" onClick={toggle}>
+          &#8693;
+        </AsideBtn>
+        <div>{favoriteCars.length > 0 && <Title>Favorites filter</Title>}</div>
         <RadioFilter open={isOpen} />
         <div>
           <Filter cars={favoriteCars} />
         </div>
-      </div>
+      </AsideWrap>
       <FavoritesList />
-    </aside>
+    </Aside>
   );
 };
 export default Sidebar;
