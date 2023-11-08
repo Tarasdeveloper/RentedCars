@@ -1,4 +1,4 @@
-import{r as n,s as i,j as r,C as u,u as l,d,e as x}from"./index-db1c00c6.js";import{f as m,C,u as f,s as g,a as h,b as j,c as L,F as b}from"./CarItem-f2ec6c56.js";import{P}from"./index-807a4696.js";const y=(t=10)=>{const[e,a]=n.useState(1),[s]=n.useState(t);return[s,e,()=>a(o=>o+1)]},F=i.button`
+import{r as n,s as i,j as r,C as u,u as l,d,e as x}from"./index-c737ad88.js";import{f as m,C,u as f,s as g,a as h,b as j,c as L,F as b}from"./CarItem-25b78f56.js";import{P}from"./index-c06ae1d4.js";const y=(t=10)=>{const[e,a]=n.useState(1),[s]=n.useState(t);return[s,e,()=>a(o=>o+1)]},F=i.button`
   color: var(--accent);
   margin: 0 auto;
   margin-bottom: 50px;
