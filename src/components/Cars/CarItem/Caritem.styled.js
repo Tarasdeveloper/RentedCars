@@ -4,6 +4,8 @@ export const CarListItem = styled.li`
   width: 275px;
   position: relative;
   height: 430px;
+  display: flex;
+  flex-direction: column;
 
   & img {
     height: 270px;
@@ -67,8 +69,8 @@ export const MoreButton = styled.button`
   padding: 12px;
   width: 100%;
   max-width: 274px;
-  margin-top: 28px;
   transition: background-color 0.2s ease-in-out;
+  margin-top: auto;
 
   &:hover {
     background-color: var(--hover-accent);
