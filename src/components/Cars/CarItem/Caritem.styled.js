@@ -37,7 +37,7 @@ export const HeartButton = styled.button`
   height: 22px;
   border: none;
   position: absolute;
-  z-index: 10;
+  z-index: 9;
   top: 15px;
   right: 14px;
 `;

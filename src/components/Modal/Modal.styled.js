@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const ModalCloseBtn = styled.button`
-  /* border-radius: 50%;
-  width: 20px;
-  height: 20px; */
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-color: transparent;
+  /* font-size: 20px; */
 `;
 
 export const ModalBackdrop = styled.div`
@@ -33,9 +35,13 @@ export const ModalWrap = styled.div`
   z-index: 10;
   border-radius: 24px;
   padding: 40px;
+  z-index: 11;
 
   & img {
     border-radius: 14px;
     background: #f3f3f2;
+    height: 248px;
+    margin: 0 auto;
+    object-fit: cover;
   }
 `;
