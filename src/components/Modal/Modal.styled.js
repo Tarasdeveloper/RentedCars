@@ -1,16 +1,24 @@
 import styled from 'styled-components';
 
-export const ModalCloseBtn = styled.button``;
+export const ModalCloseBtn = styled.button`
+  /* border-radius: 50%;
+  width: 20px;
+  height: 20px; */
+`;
 
 export const ModalBackdrop = styled.div`
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: 'rgba(0, 0, 0, 0.5)';
+  background: rgba(18, 20, 23, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `;
 
 export const ModalWrap = styled.div`
@@ -23,4 +31,11 @@ export const ModalWrap = styled.div`
   width: 545px;
   height: 760px;
   z-index: 10;
+  border-radius: 24px;
+  padding: 40px;
+
+  & img {
+    border-radius: 14px;
+    background: #f3f3f2;
+  }
 `;
