@@ -9,6 +9,20 @@ export const CarListItem = styled.li`
     object-fit: cover;
     border-radius: 14px;
   }
+  & ul {
+    font-size: 12px;
+    color: rgba(18, 20, 23, 0.5);
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    &li {
+      &span {
+        margin-left: 6px;
+        display: inline-block;
+      }
+    }
+  }
 `;
 
 export const IconHeart = styled.svg`

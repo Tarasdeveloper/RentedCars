@@ -7,7 +7,6 @@ export const LoadBtn = styled.button`
   display: block;
   border-color: transparent;
   text-decoration-line: underline;
-  /* border-bottom: 1px solid var(--accent); */
   transition: all 0.3s ease-in-out;
 
   &:hover {
