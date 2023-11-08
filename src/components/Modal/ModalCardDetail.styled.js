@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ModalTitle = styled.div`
@@ -21,4 +22,14 @@ export const CarsLocateData = styled.div`
     flex-wrap: wrap;
     margin-bottom: 4px;
   }
+`;
+
+export const RentLink = styled(Link)`
+  color: #ffffff;
+  padding: 12px 50px;
+  background-color: var(--accent);
+  display: inline-flex;
+  width: 170px;
+  border-radius: 12px;
+  margin-top: auto;
 `;

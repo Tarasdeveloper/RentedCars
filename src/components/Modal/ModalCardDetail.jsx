@@ -11,7 +11,7 @@ import {
   parseRentalConditions,
   renderItems,
 } from '../../shared/utils/utils';
-import { CarsLocateData, ModalTitle } from './ModalCardDetail.styled';
+import { CarsLocateData, ModalTitle, RentLink } from './ModalCardDetail.styled';
 
 const ModalCardDetail = ({ car }) => {
   const {
@@ -62,7 +62,7 @@ const ModalCardDetail = ({ car }) => {
         mile={mile}
         price={price}
       />
-      <a href="tel:+380730000000">Rental car</a>
+      <RentLink href="tel:+380730000000">Rental car</RentLink>
     </>
   );
 };

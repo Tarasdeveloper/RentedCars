@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import { CondItem } from './RentalCond.styled';
 
 const RentalCondItem = ({ conditionText, conditionValue }) => {
   return (
-    <li>
+    <CondItem>
       <p>{conditionText}</p>
       {conditionValue && <span>{conditionValue}</span>}
-    </li>
+    </CondItem>
   );
 };
 

@@ -34,8 +34,10 @@ export const ModalWrap = styled.div`
   height: 760px;
   z-index: 10;
   border-radius: 24px;
-  padding: 40px;
+  padding: 37px;
   z-index: 11;
+  display: flex;
+  flex-direction: column;
 
   & img {
     border-radius: 14px;

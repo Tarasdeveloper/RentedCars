@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 
 import RentalCondItem from './RentalCondItem';
+import { RentalList, RentalTitle } from './RentalCond.styled';
 
 const RentalCondBlock = ({ rentConditions, mile, price, title }) => {
   return (
     <div>
-      <p>{title}:</p>
-      <ul>
+      <RentalTitle>{title}:</RentalTitle>
+      <RentalList>
         <RentalCondItem
           conditionText={rentConditions[0]}
           conditionValue={rentConditions[1]}
@@ -18,7 +19,7 @@ const RentalCondBlock = ({ rentConditions, mile, price, title }) => {
           conditionText={'Price: '}
           conditionValue={`${price}$`}
         />
-      </ul>
+      </RentalList>
     </div>
   );
 };

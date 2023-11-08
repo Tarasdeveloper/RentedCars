@@ -1,12 +1,12 @@
 import Sidebar from '../../components/Sidebar/Sidebar';
-import { Container } from '../Catalog/Catalog.styled';
+import { FavoritesContainer } from './Favorites.styled';
 
 const FavoritesPage = () => {
   return (
     <>
-      <Container>
+      <FavoritesContainer>
         <Sidebar />
-      </Container>
+      </FavoritesContainer>
     </>
   );
 };
