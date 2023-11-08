@@ -7,7 +7,7 @@ export const LoadBtn = styled.button`
   display: block;
   border-color: transparent;
   text-decoration-line: underline;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     text-decoration: none;
@@ -18,6 +18,7 @@ export const LoadBtn = styled.button`
 export const CarsArr = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 50px;
   margin-bottom: 100px;
 `;

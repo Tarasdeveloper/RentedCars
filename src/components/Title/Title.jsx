@@ -1,11 +1,7 @@
 import PropTypes from 'prop-types';
 
-const Title = ({ children, className }) => {
-  return (
-    <h2 className={className ? `${className}` : 'title-card flex '}>
-      {children}
-    </h2>
-  );
+const Title = ({ children }) => {
+  return <h2>{children}</h2>;
 };
 
 Title.propTypes = {

@@ -16,10 +16,11 @@ export const CarListItem = styled.li`
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+
     & li {
       & span {
-        margin-left: 6px;
         display: inline-block;
+        margin-left: 6px;
       }
     }
   }
@@ -66,4 +67,9 @@ export const MoreButton = styled.button`
   width: 100%;
   max-width: 274px;
   margin-top: 28px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--hover-accent);
+  }
 `;
