@@ -11,6 +11,7 @@ import {
   parseRentalConditions,
   renderItems,
 } from '../../shared/utils/utils';
+import { CarsLocateData, ModalTitle } from './ModalCardDetail.styled';
 
 const ModalCardDetail = ({ car }) => {
   const {
@@ -42,13 +43,13 @@ const ModalCardDetail = ({ car }) => {
         alt={`${make} ${model}`}
         loading="lazy"
       />
-      <div>
+      <ModalTitle>
         {make} <span>{model}</span>, {year}
-      </div>
-      <div>
+      </ModalTitle>
+      <CarsLocateData>
         <ul>{renderItems(locationData)}</ul>
         <ul>{renderItems(carData)}</ul>
-      </div>
+      </CarsLocateData>
       <div>{description}</div>
       <AccessoriesBlock
         title="Accessories and functionalities"

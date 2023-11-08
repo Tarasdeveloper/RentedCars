@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
+import { AccessItemList } from './AccessoriesBlock.styled';
 
 const AccessoriesItem = ({ items, separator }) => {
   return (
-    <ul>
+    <AccessItemList>
       {items.map((item, idx) => (
         <li key={idx}>
           {item}
           {idx < items.length - 1 && separator}
         </li>
       ))}
-    </ul>
+    </AccessItemList>
   );
 };
 

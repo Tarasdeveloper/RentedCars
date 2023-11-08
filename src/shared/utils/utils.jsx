@@ -128,30 +128,6 @@ export const priceOptions = (arr) => {
   return priceOptions;
 };
 
-// export const priceOptions = (arr) => {
-//   if (!arr.length) {
-//     return undefined;
-//   }
-
-//   let max = 0;
-//   const priceOptions = [];
-
-//   arr.forEach((item) => {
-//     const price = +parsePrice(item.rentalPrice);
-//     if (price > max) {
-//       max = price;
-//     }
-//   });
-
-//   let i = 10;
-//   while (i <= max) {
-//     priceOptions.push(i);
-//     i += 10;
-//   }
-
-//   return priceOptions;
-// };
-
 export const filterCars = (cars, filter) => {
   if (!filter) {
     return cars;
