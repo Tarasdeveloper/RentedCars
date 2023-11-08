@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Aside = styled.aside`
-  padding-top: 30px;
+  padding: 30px 15px 0;
   & h2 {
     text-align: center;
     margin-bottom: 30px;

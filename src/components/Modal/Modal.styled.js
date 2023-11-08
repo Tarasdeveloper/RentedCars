@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ModalCloseBtn = styled.button``;
 
 export const ModalBackdrop = styled.div`
-  /* position: relative; */
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: 'rgba(0, 0, 0, 0.5)';
@@ -14,7 +14,7 @@ export const ModalBackdrop = styled.div`
 `;
 
 export const ModalWrap = styled.div`
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 50%;
   left: 50%;
