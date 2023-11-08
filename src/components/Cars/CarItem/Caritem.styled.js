@@ -50,4 +50,5 @@ export const MoreButton = styled.button`
   padding: 12px;
   width: 100%;
   max-width: 274px;
+  margin-top: 28px;
 `;
