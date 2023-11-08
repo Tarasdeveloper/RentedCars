@@ -16,30 +16,13 @@ const Sidebar = () => {
 
   return (
     <aside>
-      <div
-        className={`${
-          isOpen ? 'sidebar-open' : 'sidebar-close'
-        } sidebar relative`}
-      >
-        <button
-          // iconURL="#icon-arrow"
-          type="button"
-          // svgClass={`${!isOpen && 'ease-in-out'} transition`}
-          onClick={toggle}
-        ></button>
-        <div>
-          {favoriteCars.length > 0 && (
-            <Title
-              className={`gradient ${!isOpen && 'hidden'} ${
-                isOpen && 'scale-[1]'
-              }`}
-            >
-              Company
-            </Title>
-          )}
-        </div>
+      <div>
+        <button type="button" onClick={toggle}>
+          svg
+        </button>
+        <div>{favoriteCars.length > 0 && <Title>Company</Title>}</div>
         <RadioFilter open={isOpen} />
-        <div className={` ${!isOpen ? 'hidden' : ''}`}>
+        <div>
           <Filter cars={favoriteCars} />
         </div>
       </div>

@@ -6,4 +6,6 @@ export const FavoreList = styled.ul`
   column-gap: 30px;
   row-gap: 50px;
   margin-bottom: 100px;
+  align-items: center;
+  /* justify-content: center; */
 `;

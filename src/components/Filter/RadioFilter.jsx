@@ -5,6 +5,7 @@ import { useUniquePropValues } from '../../shared/hooks/usePropValues';
 import { selectFavorites, selectFilter } from '../../redux/cars/carsSelectors';
 
 import { setFilter } from '../../redux/cars/carsSlice';
+import { RadioList } from './RadioFilter.styled';
 
 const RadioFilter = ({ open }) => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const RadioFilter = ({ open }) => {
     (window.innerWidth >= 768 && uniqueMakes.length < 2) || open;
 
   return (
-    <ul>
+    <RadioList>
       {uniqueMakes.map((rentalCompany, index) => (
         <li
           key={index}
@@ -44,7 +45,7 @@ const RadioFilter = ({ open }) => {
           <label htmlFor={rentalCompany}>{rentalCompany}</label>
         </li>
       ))}
-    </ul>
+    </RadioList>
   );
 };
 
