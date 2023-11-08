@@ -16,8 +16,8 @@ export const CarListItem = styled.li`
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    &li {
-      &span {
+    & li {
+      & span {
         margin-left: 6px;
         display: inline-block;
       }
