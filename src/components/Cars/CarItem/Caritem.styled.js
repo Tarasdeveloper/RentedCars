@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const CarListItem = styled.li`
   width: 275px;
   position: relative;
+  height: 430px;
 
   & img {
     height: 270px;

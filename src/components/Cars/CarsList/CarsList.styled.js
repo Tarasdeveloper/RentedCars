@@ -21,4 +21,6 @@ export const CarsArr = styled.ul`
   column-gap: 30px;
   row-gap: 50px;
   margin-bottom: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
 `;
