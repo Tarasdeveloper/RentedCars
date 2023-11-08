@@ -33,6 +33,7 @@ export const IconHeart = styled.svg`
   width: 18px;
   height: 16px;
   stroke: #ffffff;
+  fill: none;
 `;
 
 export const HeartButton = styled.button`

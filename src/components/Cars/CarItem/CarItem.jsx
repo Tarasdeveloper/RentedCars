@@ -21,11 +21,29 @@ import {
   MoreButton,
 } from './Caritem.styled';
 import sprite from '../../../assets/sprite.svg';
+import { useEffect, useState } from 'react';
 
 const CarItem = ({ car }) => {
   const { isOpen, open, close } = useToggle(false);
   const favorites = useSelector(selectFavorites);
+
+  const [isActive, setIsActive] = useState(
+    JSON.parse(localStorage.getItem('iconActive')) || false,
+  );
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    localStorage.setItem('iconActive', JSON.stringify(isActive));
+  }, [isActive]);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+  };
+
+  const iconStyle = {
+    fill: isActive ? 'var(--accent)' : 'none',
+    stroke: isActive ? 'var(--accent)' : '#ffffff',
+  };
 
   const { id, year, make, model, img, rentalPrice, address } = car;
 
@@ -44,7 +62,7 @@ const CarItem = ({ car }) => {
     <>
       <CarListItem>
         <HeartButton type="button" onClick={handleToggleFavorite}>
-          <IconHeart>
+          <IconHeart key={id} style={iconStyle} onClick={handleClick}>
             <use href={`${sprite}#heart`} />
           </IconHeart>
         </HeartButton>
