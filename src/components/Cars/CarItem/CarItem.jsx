@@ -27,25 +27,22 @@ const CarItem = ({ car }) => {
   const { isOpen, open, close } = useToggle(false);
   const favorites = useSelector(selectFavorites);
 
+  const { id, year, make, model, img, rentalPrice, address } = car;
+
   const [isActive, setIsActive] = useState(
-    JSON.parse(localStorage.getItem('iconActive')) || false,
+    JSON.parse(localStorage.getItem(`iconActive ${id}`)) || false,
   );
+
   const dispatch = useDispatch();
 
   useEffect(() => {
-    localStorage.setItem('iconActive', JSON.stringify(isActive));
-  }, [isActive]);
-
-  const handleClick = () => {
-    setIsActive(!isActive);
-  };
+    localStorage.setItem(`iconActive ${id}`, JSON.stringify(isActive));
+  }, [isActive, id]);
 
   const iconStyle = {
     fill: isActive ? 'var(--accent)' : 'none',
     stroke: isActive ? 'var(--accent)' : '#ffffff',
   };
-
-  const { id, year, make, model, img, rentalPrice, address } = car;
 
   const carData = getCarData(car);
   const locationData = getLocationData(address, car);
@@ -53,16 +50,17 @@ const CarItem = ({ car }) => {
   const isFavorite = favorites?.some((favCar) => favCar.id === id);
 
   const handleToggleFavorite = () => {
-    return isFavorite
+    isFavorite
       ? dispatch(removeFromFavorites(car))
       : dispatch(setToFavorites(car));
+    setIsActive(!isFavorite);
   };
 
   return (
     <>
       <CarListItem>
         <HeartButton type="button" onClick={handleToggleFavorite}>
-          <IconHeart key={id} style={iconStyle} onClick={handleClick}>
+          <IconHeart style={iconStyle}>
             <use href={`${sprite}#heart`} />
           </IconHeart>
         </HeartButton>

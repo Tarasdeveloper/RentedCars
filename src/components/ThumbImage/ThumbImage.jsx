@@ -21,7 +21,7 @@ ThumbImage.propTypes = {
   alt: PropTypes.string.isRequired,
   className: PropTypes.string,
   blockClass: PropTypes.string,
-  width: PropTypes.string.isRequired,
+  // width: PropTypes.string.isRequired,
   height: PropTypes.string,
 };
 
