@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 export const FilterWrap = styled.form`
   max-width: 1050px;
-  margin: 0 auto;
+  margin: 20px auto;
 `;
 
 export const InputButtons = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 `;
 
 export const InputsList = styled.div`
@@ -119,12 +120,20 @@ export const ToSpan = styled.span`
   color: var(--title-color);
 `;
 
-export const HeaderButton = styled.button`
+export const SearchBtnwrap = styled.div`
+  margin-bottom: auto;
+  margin-top: 28px;
+  display: flex;
+  gap: 18px;
+`;
+
+export const SearchButton = styled.button`
   border-color: transparent;
   color: #ffffff;
   background-color: var(--accent);
-  padding: 14px 44px;
+  padding: 10px 44px;
   border-radius: 12px;
   font-size: 14px;
   font-weight: 600;
+  align-self: flex-end;
 `;

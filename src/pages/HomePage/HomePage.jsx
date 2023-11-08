@@ -1,24 +1,19 @@
 import Appreciate from '../../components/Appreciate/Appreciate';
-import ChooseClass from '../../components/ChooseClass/ChooseClass';
 import Explain from '../../components/Explain/Explain';
+import HomeHero from '../../components/HomeHero/HomeHero';
 import VideoImage from '../../components/HomeImage/HomeImage';
 import Reasons from '../../components/Reasons/Reasons';
-import { Container, HomeTitle, HomeWrap } from './HomePage.styled';
+import { HomePageWrap } from './HomePage.styled';
 
 const HomePage = () => {
   return (
-    <HomeWrap>
-      <Container>
-        <HomeTitle>Car rental in Ukraine from RentedCars</HomeTitle>
-        <ChooseClass />
-        <Explain />
-        <Appreciate />
-      </Container>
+    <HomePageWrap>
+      <HomeHero />
+      <Explain />
+      <Appreciate />
       <VideoImage />
-      <Container>
-        <Reasons />
-      </Container>
-    </HomeWrap>
+      <Reasons />
+    </HomePageWrap>
   );
 };
 

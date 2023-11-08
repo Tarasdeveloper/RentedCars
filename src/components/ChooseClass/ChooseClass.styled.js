@@ -3,18 +3,21 @@ import styled from 'styled-components';
 
 export const ChooseTitle = styled.h2`
   margin-bottom: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-size: clamp(20px, 3vw, 25px);
 `;
 
 export const ChooseContainer = styled.div`
   max-width: 1190px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 12px;
   padding: 20px;
 
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     margin-bottom: 120px;
-  }
+  } */
 `;
 
 export const ChooseList = styled.ul`

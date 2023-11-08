@@ -12,7 +12,15 @@ import {
 import { selectFavorites } from '../../../redux/cars/carsSelectors';
 import ThumbImage from '../../ThumbImage/ThumbImage';
 import CardInfoBlock from '../CardInfoBlock';
-import { CarButton } from './Caritem.styled';
+import {
+  CarListItem,
+  HeartButton,
+  IconHeart,
+  ItemTitle,
+  ItemTitleWrap,
+  MoreButton,
+} from './Caritem.styled';
+import sprite from '../../../assets/sprite.svg';
 
 const CarItem = ({ car }) => {
   const { isOpen, open, close } = useToggle(false);
@@ -34,36 +42,37 @@ const CarItem = ({ car }) => {
 
   return (
     <>
-      <li>
-        <CarButton type="button" onClick={handleToggleFavorite}>
-          heart icon
-        </CarButton>
+      <CarListItem>
+        <HeartButton type="button" onClick={handleToggleFavorite}>
+          <IconHeart>
+            <use href={`${sprite}#heart`} />
+          </IconHeart>
+        </HeartButton>
         <ThumbImage
           src={img ? img : DefaultCar}
           alt={`${make} ${model}`}
-          width="274"
-          height="275"
           loading="lazy"
         />
-        {/* <Title> */}
-        <span>
-          {make}
-          <span>{model}</span>, {year}
-        </span>
-        <span>{rentalPrice}</span>
-        {/* </Title> */}
+
+        <ItemTitleWrap>
+          <ItemTitle>
+            {make}
+            <span> {model}</span>, {year}
+          </ItemTitle>
+          <span>{rentalPrice}</span>
+        </ItemTitleWrap>
 
         <CardInfoBlock locationData={locationData} carData={carData} />
 
-        <CarButton label="Learn more" onClick={open}>
+        <MoreButton label="Learn more" onClick={open}>
           Learn more
-        </CarButton>
+        </MoreButton>
         {isOpen && (
           <Modal isOpen={isOpen} onClose={close}>
             <ModalCardDetail car={car} />
           </Modal>
         )}
-      </li>
+      </CarListItem>
     </>
   );
 };

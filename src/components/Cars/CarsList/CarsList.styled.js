@@ -7,4 +7,5 @@ export const LoadBtn = styled.button`
 export const CarsArr = styled.ul`
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 `;

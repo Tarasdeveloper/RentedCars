@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import ThumbImage from '../ThumbImage/ThumbImage';
-// import Title from '../Title';
 import RentalCondBlock from '../RentalConditionals/RentalCondBlock';
 import AccessoriesBlock from '../Accessories/AccessoriesBlock';
 
@@ -41,20 +40,16 @@ const ModalCardDetail = ({ car }) => {
         height="248"
         src={img}
         alt={`${make} ${model}`}
-        className="modal-car"
-        blockClass="w-[461px] h-[248px]"
         loading="lazy"
       />
-      {/* <Title> */}
-      {make} <span>{model}</span>, {year}
-      {/* </Title> */}
+      <div>
+        {make} <span>{model}</span>, {year}
+      </div>
       <div>
         <ul>{renderItems(locationData)}</ul>
-        <ul className="modal-description flex items-center justify-start">
-          {renderItems(carData)}
-        </ul>
+        <ul>{renderItems(carData)}</ul>
       </div>
-      <div className="modal-accent-descr dark:text-white">{description}</div>
+      <div>{description}</div>
       <AccessoriesBlock
         title="Accessories and functionalities"
         accessories={accessories}

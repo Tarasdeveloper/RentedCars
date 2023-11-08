@@ -1,8 +1,8 @@
-import { ExplainText, ExplainTitle } from './Explain.styled';
+import { ExplainText, ExplainTitle, ExplainWrap } from './Explain.styled';
 
 const Explain = () => {
   return (
-    <div>
+    <ExplainWrap>
       <ExplainTitle>Car rental in Ukraine</ExplainTitle>
       <ExplainText>
         Arriving in Ukraine on business or as tourists, many people are faced
@@ -19,7 +19,7 @@ const Explain = () => {
         chance to inexpensively rent a car of the class you need with or without
         a driver!
       </ExplainText>
-    </div>
+    </ExplainWrap>
   );
 };
 

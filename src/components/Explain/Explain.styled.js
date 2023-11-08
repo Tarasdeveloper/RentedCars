@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
+export const ExplainWrap = styled.div`
+  padding: 50px 15px;
+`;
+
 export const ExplainTitle = styled.h2`
-  font-size: 30px;
+  font-size: clamp(22px, 4vw, 30px);
   text-align: center;
-  padding-top: 50px;
   margin-bottom: 30px;
 `;
 

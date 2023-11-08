@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
 
-// import DefaultCar from '../../assets/images/youngman.jpg';
+import DefaultCar from '../../assets/images/youngman.jpg';
 
-const ThumbImage = ({ src, alt, className, blockClass, width, height }) => {
+const ThumbImage = ({ src, alt, width, height }) => {
   return (
-    <div className={blockClass ? ` ${blockClass}` : ''}>
+    <div>
       <img
-        src={src ? `${src}` : ''}
+        src={src ? `${src}` : DefaultCar}
         alt={alt}
-        className={className ? `block ${className}` : 'block'}
         width={width}
         height={height}
         loading="lazy"

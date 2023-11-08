@@ -4,10 +4,13 @@ export const AppreciateWrap = styled.div`
   text-align: center;
   padding-top: 40px;
   padding-bottom: 70px;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px 70px;
 `;
 
 export const AppreciateTitle = styled.h2`
-  font-size: 30px;
+  font-size: clamp(20px, 4vw, 30px);
   margin-bottom: 30px;
 `;
 
@@ -28,14 +31,14 @@ export const AppreciateItem = styled.li`
   align-items: center;
 `;
 export const AppreciateSpan = styled.span`
-  width: 160px;
-  height: 160px;
+  width: clamp(120px, 13vw, 160px);
+  height: clamp(120px, 13vw, 160px);
   display: flex;
   align-items: center;
   justify-content: center;
   border: 5px solid var(--accent);
   border-radius: 50%;
-  font-size: 40px;
+  font-size: clamp(25px, 3vw, 40px);
   font-weight: 700;
   margin-bottom: 15px;
 

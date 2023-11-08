@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const ReasonWrap = styled.div`
   padding-bottom: 80px;
+  padding-top: 50px;
+  max-width: 1190px;
+  margin: 0 auto;
 `;
 
 export const ReasonTitle = styled.h2`

@@ -5,7 +5,6 @@ import { useUniquePropValues } from '../../shared/hooks/usePropValues';
 import { resetFilter, setFilter } from '../../redux/cars/carsSlice';
 import { selectFilter } from '../../redux/cars/carsSelectors';
 import { priceOptions } from '../../shared/utils/utils';
-// import Button from '../Button/Button';
 import { Controller, useForm } from 'react-hook-form';
 import {
   BrandInput,
@@ -14,10 +13,11 @@ import {
   FromInput,
   FromLabel,
   FromSpan,
-  HeaderButton,
   InputButtons,
   InputsList,
   PriceSelect,
+  SearchBtnwrap,
+  SearchButton,
   ToInput,
   ToLabel,
   ToSpan,
@@ -64,11 +64,7 @@ const Filter = ({ cars }) => {
   };
 
   return (
-    <FilterWrap
-      onSubmit={handleSubmit(onSubmit)}
-      // className={`${isFormDisabled ? 'pointer-events-none' : ''}`}
-      disabled={isFormDisabled}
-    >
+    <FilterWrap onSubmit={handleSubmit(onSubmit)} disabled={isFormDisabled}>
       <InputButtons>
         <InputsList>
           <BrandInput>
@@ -185,18 +181,18 @@ const Filter = ({ cars }) => {
             </div>
           </div>
         </InputsList>
-        <div>
-          <HeaderButton type="submit" label="Search">
+        <SearchBtnwrap>
+          <SearchButton type="submit" label="Search">
             Search
-          </HeaderButton>
-          <HeaderButton
+          </SearchButton>
+          <SearchButton
             type="button"
             onClick={resetFilterInRedux}
             label="Reset"
           >
             Reset
-          </HeaderButton>
-        </div>
+          </SearchButton>
+        </SearchBtnwrap>
       </InputButtons>
     </FilterWrap>
   );

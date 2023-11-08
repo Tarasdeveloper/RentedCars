@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { createPortal } from 'react-dom';
 
 import { handleClose } from '../../shared/utils/utils';
-// import { ModalBtn } from './Modal.styled';
+import { ModalBackdrop, ModalCloseBtn, ModalWrap } from './Modal.styled';
 
 const modalContainer = document.getElementById('modal');
 
@@ -31,14 +31,14 @@ const Modal = ({ onClose, children, isOpen }) => {
   }, [handleModalClose]);
 
   return createPortal(
-    <div onClick={handleModalClose}>
-      <div>
-        <button onClick={onClose} type="button">
-          Close
-        </button>
+    <ModalBackdrop onClick={handleModalClose}>
+      <ModalWrap>
+        <ModalCloseBtn onClick={onClose} type="button">
+          &#10060;
+        </ModalCloseBtn>
         {children}
-      </div>
-    </div>,
+      </ModalWrap>
+    </ModalBackdrop>,
     modalContainer,
   );
 };
