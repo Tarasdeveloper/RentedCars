@@ -6,7 +6,14 @@ export const LoadBtn = styled.button`
   margin-bottom: 50px;
   display: block;
   border-color: transparent;
-  text-decoration: underline;
+  text-decoration-line: underline;
+  /* border-bottom: 1px solid var(--accent); */
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--hover-accent);
+  }
 `;
 
 export const CarsArr = styled.ul`

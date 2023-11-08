@@ -33,6 +33,7 @@ export const ItemTitleWrap = styled.span`
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  margin-bottom: 8px;
 `;
 
 export const ItemTitle = styled.span`
