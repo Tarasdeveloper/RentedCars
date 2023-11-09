@@ -5,8 +5,7 @@ import {
 } from '../../../redux/cars/carsSelectors';
 import { filterCars } from '../../../shared/utils/utils';
 import CarItem from '../CarItem/CarItem';
-import { FavoreList } from './FavoritesList.styled';
-// import NotFound from '../NotFound/NotFound';
+import { FavoreList, NotFound } from './FavoritesList.styled';
 
 const FavoritesList = () => {
   const favoriteCars = useSelector(selectFavorites);
@@ -15,7 +14,7 @@ const FavoritesList = () => {
 
   return (
     <div>
-      {!filteredCars.length && 'Not Found'}
+      {!filteredCars.length && <NotFound>List is empty</NotFound>}
       <FavoreList>
         {filteredCars.map((car) => (
           <CarItem car={car} key={car.id} />

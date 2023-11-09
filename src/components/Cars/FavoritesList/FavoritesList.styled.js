@@ -7,5 +7,11 @@ export const FavoreList = styled.ul`
   row-gap: 50px;
   margin-bottom: 100px;
   align-items: center;
-  /* justify-content: center; */
+`;
+
+export const NotFound = styled.p`
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 50px;
 `;

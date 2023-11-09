@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const FilterWrap = styled.form`
   max-width: 1050px;
-  margin: 20px auto;
+  margin: 0 auto auto;
+  height: 150px;
+  padding-top: 30px;
 `;
 
 export const InputButtons = styled.div`

@@ -15,6 +15,9 @@ export const AccessesBlock = styled.div`
 
 export const AccessItemList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
   & li {
     display: flex;
   }
