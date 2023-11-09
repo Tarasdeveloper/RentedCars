@@ -14,8 +14,8 @@ export const AsideWrap = styled.div`
 
 export const AsideBtn = styled.button`
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 20px;
+  bottom: 20px;
   font-size: 20px;
   line-height: 1;
   border-radius: 50%;
