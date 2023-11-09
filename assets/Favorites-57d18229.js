@@ -1,4 +1,4 @@
-import{s as r,u as o,j as e,e as l}from"./index-00329686.js";import{c as d,a as p,b as m,C as j,u as f,d as v,e as F,F as b}from"./CarItem-cf1157d4.js";import{P as c}from"./index-9ec4e5b3.js";const w=r.ul`
+import{s as r,u as o,j as e,e as l}from"./index-6cd443a6.js";import{c as d,a as p,b as m,C as j,u as f,d as v,e as F,F as b}from"./CarItem-968ca316.js";import{P as c}from"./index-201ef9c4.js";const w=r.ul`
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
@@ -13,6 +13,8 @@ import{s as r,u as o,j as e,e as l}from"./index-00329686.js";import{c as d,a as 
 `,k=()=>{const i=o(d),n=o(p),s=m(i,n);return e.jsxs("div",{children:[!s.length&&e.jsx(C,{children:"List is empty"}),e.jsx(w,{children:s.map(a=>e.jsx(j,{car:a},a.id))})]})},x=({children:i})=>e.jsx("h2",{children:i});x.propTypes={children:c.node.isRequired,className:c.string};const y=r.ul`
   display: flex;
   gap: 20px;
+  max-width: 1220px;
+  margin: 0 auto;
 `,h=()=>{const i=f(),n=o(d),s=o(p),a=v(n,"rentalCompany"),u=t=>{!s||s.rentalCompany!==null?i(l({rentalCompany:t})):s.make===t?i(l({...s,rentalCompany:""})):i(l({...s,rentalCompany:t}))};return e.jsx(y,{children:a.map((t,g)=>e.jsxs("li",{children:[e.jsx("input",{id:t,type:"radio",name:"make",value:t,checked:(s==null?void 0:s.rentalCompany)===t,onChange:()=>u(t)}),e.jsx("label",{htmlFor:t,children:t})]},g))})};h.propTypes={open:c.bool};const T=r.aside`
   padding: 30px 15px 0;
   & h2 {
@@ -23,8 +25,8 @@ import{s as r,u as o,j as e,e as l}from"./index-00329686.js";import{c as d,a as 
   position: relative;
 `,P=r.button`
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 20px;
+  bottom: 20px;
   font-size: 20px;
   line-height: 1;
   border-radius: 50%;
