@@ -62,7 +62,7 @@ const ModalCardDetail = ({ car }) => {
         mile={mile}
         price={price}
       />
-      <RentLink href="tel:+380730000000">Rental car</RentLink>
+      <RentLink to="tel:+380730000000">Rental car</RentLink>
     </>
   );
 };
