@@ -32,4 +32,9 @@ export const RentLink = styled(Link)`
   width: 170px;
   border-radius: 12px;
   margin-top: auto;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--hover-accent);
+  }
 `;
